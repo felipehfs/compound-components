@@ -1,6 +1,7 @@
 .select {
   position: relative;
   width: 220px;
+  --active-select: ;
 }
 
 .select__trigger {
@@ -33,6 +34,12 @@
 }
 
 .optionItem--current {
+  background: #f1f1f1;
+}
+
+.optgroup__label {
+  font-size: 14px;
+  padding-left: 4px;
   font-weight: bold;
 }
 
