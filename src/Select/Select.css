@@ -1,0 +1,41 @@
+.select {
+  position: relative;
+  width: 220px;
+}
+
+.select__trigger {
+  cursor: pointer;
+  width: 220px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  background: transparent;
+  text-align: left;
+}
+
+.select__menu {
+  width: inherit;
+  position: absolute;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.optionItem {
+  cursor: pointer;
+  display: block;
+  background: #fff;
+  border: none;
+  width: 100%;
+  padding: 8px;
+  text-align: left;
+}
+
+.optionItem--disabled {
+  color: gray;
+}
+
+.optionItem--current {
+  font-weight: bold;
+}
+
+.optionItem--active:hover {
+  background-color: #ddd;
+}

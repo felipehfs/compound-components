@@ -1,0 +1,14 @@
+.expandable__button {
+  background: transparent;
+  border: none;
+  color: blue;
+  font-size: 14px;
+  cursor: pointer;
+}
+.expandable__container {
+  width: 400px;
+}
+
+.expandable__content {
+  margin: 16px 0 8px;
+}
