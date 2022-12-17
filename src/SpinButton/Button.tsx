@@ -1,9 +1,13 @@
-import { ReactNode, useContext } from "react";
+import { ReactNode, useContext, ButtonHTMLAttributes } from "react";
 import { ButtonProps, SpinButtonContext } from "./SpinButton";
 
-function Button({ children, onClick }: ButtonProps) {
+function Button({
+  children,
+  onClick,
+  ...rest
+}: ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
-    <button onClick={onClick} className="spinButton__button">
+    <button {...rest} onClick={onClick} className="spinButton__button">
       {children}
     </button>
   );
@@ -11,10 +15,18 @@ function Button({ children, onClick }: ButtonProps) {
 
 export function IncrementButton({ children }: { children: ReactNode }) {
   const { setValue, value } = useContext(SpinButtonContext);
-  return <Button onClick={() => setValue(value + 1)}>{children}</Button>;
+  return (
+    <Button aria-label="Increment" onClick={() => setValue(value + 1)}>
+      {children}
+    </Button>
+  );
 }
 
 export function DecrementButton({ children }: { children: ReactNode }) {
   const { setValue, value } = useContext(SpinButtonContext);
-  return <Button onClick={() => setValue(value - 1)}>{children}</Button>;
+  return (
+    <Button aria-label="Decrement" onClick={() => setValue(value - 1)}>
+      {children}
+    </Button>
+  );
 }

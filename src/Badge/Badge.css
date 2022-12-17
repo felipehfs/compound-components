@@ -1,0 +1,16 @@
+.badge {
+  font-size: 12px;
+  padding: 2px 8px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.badge--default {
+  color: #fff;
+  background: #777;
+}
+
+.badge--warn {
+  color: #fff;
+  background: orange;
+}

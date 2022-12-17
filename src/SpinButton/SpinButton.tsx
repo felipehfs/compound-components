@@ -14,7 +14,16 @@ export const SpinButtonContext = createContext({
 
 function Label() {
   const { value } = useContext(SpinButtonContext);
-  return <span className="spinButton__label">{value}</span>;
+  return (
+    <span
+      aria-valuenow={value}
+      aria-label="counter"
+      role="spinbutton"
+      className="spinButton__label"
+    >
+      {value}
+    </span>
+  );
 }
 
 type ContainerProps = {

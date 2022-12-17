@@ -12,7 +12,7 @@ const Template: ComponentStory<typeof Select> = (args) => {
   const [_, updateArgs] = useArgs();
 
   return (
-    <Select {...args} onChange={(value) => updateArgs({ value: value })}>
+    <Select {...args} onChange={(value) => updateArgs({ value })}>
       <OptionItem label="Option1" value="1">
         Option1
       </OptionItem>
