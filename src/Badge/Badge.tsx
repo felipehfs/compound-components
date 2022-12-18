@@ -3,7 +3,7 @@ import classNames from "classnames";
 import "./Badge.css";
 
 type BadgeProps = {
-  variant: "default" | "warn";
+  variant: "default" | "warn" | "danger";
 };
 
 export function Badge({ children, variant }: PropsWithChildren<BadgeProps>) {
@@ -13,6 +13,7 @@ export function Badge({ children, variant }: PropsWithChildren<BadgeProps>) {
         badge: true,
         "badge--default": variant === "default",
         "badge--warn": variant === "warn",
+        "badge--danger": variant === "danger",
       })}
     >
       {children}

@@ -14,3 +14,8 @@
   color: var(--white);
   background: var(--orange-500);
 }
+
+.badge--danger {
+  color: var(--white);
+  background: var(--red-500);
+}
