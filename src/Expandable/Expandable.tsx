@@ -18,7 +18,11 @@ function Container({ children }: { children: ReactNode }) {
 
 function Content({ children }: { children: ReactNode }) {
   const { open } = useContext(ExpandableContext);
-  return open ? <div className="expandable__content">{children}</div> : null;
+  return open ? (
+    <div aria-expanded={open} className="expandable__content">
+      {children}
+    </div>
+  ) : null;
 }
 
 export const Expandable = {
