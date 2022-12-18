@@ -28,11 +28,11 @@ function Label() {
 
 type ContainerProps = {
   children: ReactNode;
-  defaultValue: number;
+  value: number;
+  setValue: (value: number) => void;
 };
 
-function Container({ children, defaultValue }: ContainerProps) {
-  const [value, setValue] = useState(defaultValue);
+function Container({ children, value, setValue }: ContainerProps) {
   return (
     <SpinButtonContext.Provider value={{ value, setValue }}>
       <div className="spinButton">{children}</div>
