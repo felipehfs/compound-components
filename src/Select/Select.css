@@ -6,17 +6,17 @@
 .select__trigger {
   cursor: pointer;
   width: 220px;
-  border: 1px solid #ccc;
-  padding: 8px;
+  border: 1px solid var(--gray-500);
+  padding: var(--padding-xs);
   background: transparent;
   text-align: left;
-  border-radius: 8px;
+  border-radius: var(--border-radius-xs);
 }
 
 .select__menu {
   width: inherit;
   position: absolute;
-  border-radius: 8px;
+  border-radius: var(--border-radius-xs);
   overflow: hidden;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -27,25 +27,25 @@
   background: #fff;
   border: none;
   width: 100%;
-  padding: 8px;
+  padding: var(--padding-xs);
   text-align: left;
 }
 
 .optionItem--disabled {
-  color: gray;
+  color: var(--gray-600);
   cursor: default;
 }
 
 .optionItem--current {
-  background: #f1f1f1;
+  background: var(--gray-300);
 }
 
 .optgroup__label {
-  font-size: 14px;
-  padding-left: 4px;
+  font-size: var(--font-size-sm);
+  padding-left: var(--padding-xxs2);
   font-weight: bold;
 }
 
 .optionItem--active:hover {
-  background-color: #ddd;
+  background-color: var(--gray-700);
 }

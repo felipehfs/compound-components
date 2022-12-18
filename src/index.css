@@ -8,3 +8,28 @@
 .container {
   margin: 16px;
 }
+
+:root {
+  --z-index-modal: 5;
+  --gray-300: #f1f1f1;
+  --gray-500: #ccc;
+  --gray-600: gray;
+  --gray-700: #ddd;
+  --gray-900: #777;
+  --white: #fff;
+  --yellow-500: yellow;
+  --orange-500: orange;
+  --black: #000;
+  --blue-500: blue;
+  --padding-xxs: 2px;
+  --padding-xxs2: 4px;
+  --padding-xs: 8px;
+  --padding-sm: 12px;
+  --padding-md: 16px;
+  --border-radius-xs: 8px;
+  --border-radius-sm: 16px;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-sm2: 16px;
+  --font-size-md: 18px;
+}

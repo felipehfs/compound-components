@@ -8,44 +8,44 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 5;
+  z-index: var(--z-index-modal);
 }
 
 .dialog {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+  background-color: var(--white);
   max-width: 500px;
   width: 100%;
-  border-radius: 8px;
+  border-radius: var(--border-radius-xs);
 }
 
 .dialog__header {
-  padding: 16px;
-  font-size: 14px;
+  padding: var(--padding-md);
+  font-size: var(--front-size-sm);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--gray-500);
 }
 
 .dialog__header__title {
-  font-size: 18px;
+  font-size: var(--font-size-md);
 }
 
 .dialog__header__button {
   background: none;
   border: none;
-  font-size: 21px;
+  font-size: var(--font-size-md);
   cursor: pointer;
 }
 
 .dialog__content {
-  padding: 16px;
+  padding: var(--padding-md);
 }
 
 .dialog__footer {
-  border-top: 1px solid #ccc;
-  padding: 8px 16px;
+  border-top: 1px solid var(--gray-500);
+  padding: var(--padding-xs) var(--padding-md);
   display: flex;
   justify-content: flex-end;
 }

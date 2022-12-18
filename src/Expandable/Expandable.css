@@ -2,7 +2,7 @@
   background: transparent;
   border: none;
   color: blue;
-  font-size: 14px;
+  font-size: var(--font-size-sm);
   cursor: pointer;
 }
 .expandable__container {
@@ -10,5 +10,5 @@
 }
 
 .expandable__content {
-  margin: 16px 0 8px;
+  margin: var(--padding-md) 0 var(--padding-xs);
 }

@@ -4,16 +4,16 @@
 .tabHeader {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding-bottom: 16px;
+  gap: var(--padding-xs);
+  padding-bottom: var(--padding-md);
 }
 
 .tab__panel__item {
 }
 
 .tabHeader__item {
-  border-radius: 16px;
-  padding: 8px 16px;
+  border-radius: var(--border-radius-sm);
+  padding: var(--padding-xs) var(--padding-md);
   background-color: #f1f1f1;
   border: none;
   font-weight: bold;
@@ -21,13 +21,13 @@
 }
 
 .tabHeader__item--active {
-  background: blue;
-  color: #fff;
+  background: var(--blue-500);
+  color: var(--white);
   border-bottom: none;
 }
 
 .tabHeader__item--disabled {
-  background-color: #f1f1f1;
-  color: #ccc;
+  background-color: var(--gray-300);
+  color: var(--gray-500);
   cursor: not-allowed;
 }

@@ -1,16 +1,16 @@
 .badge {
-  font-size: 12px;
-  padding: 2px 8px;
+  font-size: var(--font-size-xs);
+  padding: var(--padding-xxs) var(--padding-xs);
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: var(--border-radius-xs);
 }
 
 .badge--default {
-  color: #fff;
-  background: #777;
+  color: var(--white);
+  background: var(--gray-900);
 }
 
 .badge--warn {
-  color: #fff;
-  background: orange;
+  color: var(--white);
+  background: var(--orange-500);
 }

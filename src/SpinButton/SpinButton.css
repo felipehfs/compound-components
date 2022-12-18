@@ -1,17 +1,17 @@
 .spinButton {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin: 8px 0;
+  gap: var(--padding-xs);
+  margin: var(--padding-xs) 0;
 }
 
 .spinButton__button {
   background-color: transparent;
   border: none;
-  font-size: 16px;
+  font-size: var(--font-size-sm2);
   cursor: pointer;
 }
 
 .spinButton__label {
-  font-size: 16px;
+  font-size: var(--font-size-sm2);
 }
