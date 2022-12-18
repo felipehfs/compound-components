@@ -1,7 +1,6 @@
 .select {
   position: relative;
   width: 220px;
-  --active-select: ;
 }
 
 .select__trigger {
@@ -11,11 +10,14 @@
   padding: 8px;
   background: transparent;
   text-align: left;
+  border-radius: 8px;
 }
 
 .select__menu {
   width: inherit;
   position: absolute;
+  border-radius: 8px;
+  overflow: hidden;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
