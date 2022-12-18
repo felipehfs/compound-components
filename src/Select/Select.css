@@ -16,6 +16,7 @@
 .select__menu {
   width: inherit;
   position: absolute;
+  margin-top: var(--padding-xs);
   border-radius: var(--border-radius-xs);
   overflow: hidden;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
