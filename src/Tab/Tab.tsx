@@ -4,7 +4,6 @@ import {
   createContext,
   PropsWithChildren,
   useContext,
-  useState,
 } from "react";
 import "./Tab.css";
 import classnames from "classnames";
@@ -21,9 +20,7 @@ function TabContainer({
 }: PropsWithChildren<{ index: number; onChange: (value: number) => void }>) {
   return (
     <TabContext.Provider value={{ tabIndex: index, setTabIndex: onChange }}>
-      <div role="tab" className="tab__container">
-        {children}
-      </div>
+      <div className="tab__container">{children}</div>
     </TabContext.Provider>
   );
 }
@@ -34,11 +31,7 @@ function Panels({ children }: PropsWithChildren) {
 }
 
 function PanelItem({ children }: PropsWithChildren) {
-  return (
-    <div role="tabpanel" className="tab__panel__item">
-      {children}
-    </div>
-  );
+  return <div className="tab__panel__item">{children}</div>;
 }
 function HeaderItem({
   children,
@@ -56,10 +49,10 @@ function HeaderItem({
   return (
     <button
       onClick={handleOnclick}
+      disabled={disabled}
       className={classnames({
         tabHeader__item: true,
         "tabHeader__item--active": tabIndex === index,
-        "tabHeader__item--disabled": disabled,
       })}
     >
       {children}

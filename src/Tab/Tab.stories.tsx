@@ -16,7 +16,7 @@ const Template: ComponentStory<typeof Tab.Container> = (args) => {
       <Tab.Headers>
         <Tab.HeaderItem disabled>Ao vivo</Tab.HeaderItem>
         <Tab.HeaderItem>
-          Entretenimento <Badge variant="default">5</Badge>
+          Entretenimento <Badge variant="danger">5</Badge>
         </Tab.HeaderItem>
         <Tab.HeaderItem>Esportes</Tab.HeaderItem>
         <Tab.HeaderItem>Musica</Tab.HeaderItem>
