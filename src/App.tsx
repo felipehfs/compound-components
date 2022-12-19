@@ -6,9 +6,10 @@ import { useState } from "react";
 
 function App() {
   const [food, setFood] = useState<SelectItem | null>(null);
+  const [likes, setLikes] = useState(0);
   return (
     <div className="container">
-      <SpinButton.Container defaultValue={0}>
+      <SpinButton.Container setValue={setLikes} value={likes}>
         <SpinButton.IncrementButton>👍</SpinButton.IncrementButton>
         <SpinButton.Label />
         <SpinButton.DecrementButton>👎</SpinButton.DecrementButton>

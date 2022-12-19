@@ -22,7 +22,12 @@ function Container({
   return (
     <DialogContext.Provider value={{ open, onClose }}>
       <div className="dialog__overlay">
-        <div role="dialog" aria-modal={open} className="dialog">
+        <div
+          role="alertdialog"
+          aria-labelledby="title"
+          aria-modal={open}
+          className="dialog"
+        >
           {children}
         </div>
       </div>
@@ -34,7 +39,9 @@ export function Header({ title }: { title: string }) {
   const { onClose } = useContext(DialogContext);
   return (
     <header className="dialog__header">
-      <h3 className="dialog__header__title">{title}</h3>
+      <h3 id="title" className="dialog__header__title">
+        {title}
+      </h3>
       <button
         onClick={onClose}
         aria-label="Fechar"
