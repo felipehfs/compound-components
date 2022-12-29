@@ -10,8 +10,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "chromatic": "npx chromatic --project-token=fe9daf0c589f",
-    "test:": "jest",
-    "test:ci": "jest --bail"
+    "test": "jest",
+    "test:ci": "jest --bail --coverage"
   },
   "dependencies": {
     "@types/jest": "^29.2.4",
