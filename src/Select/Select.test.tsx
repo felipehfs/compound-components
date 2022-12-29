@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { OptionItem, Select } from "./Select";
 
 test("should be possible select a value", async () => {
